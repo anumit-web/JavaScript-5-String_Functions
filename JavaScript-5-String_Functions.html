@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript String Methods </title>
+</head>
+
+<body>
+
+    <h1> JavaScript String Methods </h1>
+
+
+    <div id="data_from_api"></div>
+
+    <div>
+
+
+    </div>
+
+    <script>
+        const string1 = "I Have Found It Is The Small Things, Everyday Deeds Of Ordinary Folk That Keeps The Darkness At Bay";
+        // Slice( ) and splice( ) methods are for arrays. The split( ) method is used for strings.
+
+         
+        console.log("JavaScript String Methods");
+        console.log("-----------------------------");
+        console.log("String.length or text.length");
+        console.log("String length = " + string1.length);
+        console.log("-----------------------------");
+        console.log("String lower case or upper case");
+        console.log("Upper case = " + string1.toUpperCase());
+        console.log("Lower case = " + string1.toLowerCase());
+        console.log("-----------------------------");
+        console.log("Character at an index");
+        console.log("Character at index 7 (0 based index) = " + string1.charAt(7));
+        console.log("-----------------------------");
+        console.log("Sub string");
+        console.log("Print 30 characters starting from 20 = " + string1.substring(20, 50));
+        console.log("-----------------------------");
+        console.log("Index of (Find position of char or string)");
+        console.log("Location of Folk = " + string1.indexOf('Folk'));
+        console.log("-----------------------------");
+        console.log("Split");
+        console.log("Take a string and divide into array of substrings");
+        const splittedString1 = string1.split(' ');
+        console.log("Number of sub strings are equal to array size = " + splittedString1.length);
+        const splittedString2 = string1.split('');
+        console.log("Number of sub strings are equal to array size = " + splittedString2.length);
+        console.log("-----------------------------");
+        console.log("Replace a string with another string");
+        console.log("String after replace  = " + string1.replace("Small", "Big"));
+        console.log("-----------------------------");
+        let text1 = "      Gandalf      ";
+        let text2 = text1.trim();
+        console.log("Trimmed text = " + text2);
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
